@@ -1,0 +1,24 @@
+{
+  "name": "backend-rest",
+  "version": "1.0.0",
+  "description": "backend rest api for salestock test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ismail",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cloudinary": "^1.11.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.5",
+    "mongoose-paginate": "^5.0.3",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "slugify": "^1.3.0"
+  }
+}
