@@ -1,5 +1,5 @@
 module.exports = {
-    mongoURI: 'mongodb://localhost:27017/salestock_test',
+    mongoURI: 'mongodb://hanyaismail:Abc123456@ds047146.mlab.com:47146/notable',
     jwtKey: 'klkjAMKllkamdIIO',
     cloudinaryConfig: {
 		cloudName: process.env.CLOUD_NAME || 'geektogreat',
