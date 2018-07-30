@@ -31,6 +31,8 @@ the server run on port 5000
 Open browser and go to localhost:3000
 
 # USING CMS
+```
 cd cms
 npm install
 npm start
+```
