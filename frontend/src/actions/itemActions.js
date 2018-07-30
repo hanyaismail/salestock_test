@@ -2,7 +2,6 @@ import axios from 'axios';
 import { GET_ITEMS, ITEM_LOADING, SEARCH_ITEMS, GET_ITEM_SLUG, GET_ITEMS_SCROLL } from './types';
 
 export const getItems = (page) => dispatch => {
-    console.log('get item')
     dispatch(itemLoading)
     axios.get(`/api/items?page=${page}`)
         .then(res => {
@@ -15,7 +14,6 @@ export const getItems = (page) => dispatch => {
 
 export const getItemsScroll = (page) => dispatch => {
     dispatch(itemLoading)
-    console.log('getItemsScroll', page)
     axios.get(`/api/items?page=${page}`)
         .then(res => {
             dispatch({

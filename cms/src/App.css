@@ -26,3 +26,40 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+div {
+    padding: 2em;
+    background: white;
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+button {
+  margin-top: 1em;
+}
+
+input {
+  margin: 0.75em 0;
+}
+
+.box {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.normal {
+  padding: 0 !important;
+}

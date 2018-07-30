@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import SearchIcon from '@material-ui/icons/Search';
 import { Link } from 'react-router-dom';
 
 const styles = () => ({
@@ -40,7 +40,7 @@ class NavBar extends React.Component {
                 <MenuIcon />
               </IconButton>
             </Link>
-            <Link to="/search" style={{ textDecoration: 'none', color:'inherit' }}><Button color="inherit">Search</Button></Link>
+            <Link to="/search" style={{ textDecoration: 'none', color:'inherit' }}><Button color="inherit"><SearchIcon /></Button></Link>
           </Toolbar>
         </AppBar>
       </div>

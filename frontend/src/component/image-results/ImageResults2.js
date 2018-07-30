@@ -128,16 +128,7 @@ class ImageResults2 extends React.Component {
 
     return (
         <div className={classes.container}>
-            {/* <InfiniteScroll
-                pageStart={0}
-                loadMore={this.loadItems.bind(this)}
-                hasMore={this.state.page != 2}
-                loader={<div className="loader" key={0}>Loading ...</div>}
-            >
-                {imageListContent}
-            </InfiniteScroll> */}
             {imageListContent}
-            
         </div>
     );
   }

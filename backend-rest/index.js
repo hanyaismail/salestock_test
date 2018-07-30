@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
+const cors = require('cors');
 
 const items = require('./routes/api/items');
 const auth = require('./routes/api/auth');
@@ -12,6 +13,9 @@ const app = express();
 
 //morgan
 app.use(morgan('dev'));
+
+//cors
+app.use(cors());
 
 // body-parser
 app.use(bodyParser.json());

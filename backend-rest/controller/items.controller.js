@@ -50,15 +50,15 @@ module.exports.searchItem = async function(req, res) {
 
 module.exports.addItem = async function(req, res) {
     try {
-        console.log(req.file)
+        console.log(req.body)
         const cloudResult = await cloudinary.uploader.upload(req.file.path);
-        console.log(cloudResult)
+        // console.log(cloudResult)
         const newItem = new Item({
             name: req.body.name,
             price: req.body.price,
             color: req.body.color,
             detail: req.body.detail,
-            size: req.body.size,
+            size: JSON.parse(req.body.size),
             slug: slugify(req.body.name),
             pictUrl: cloudResult.secure_url
         })
